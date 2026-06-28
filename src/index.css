@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital,wght@0,400;1,400&family=Space+Mono:wght@400;700&family=Nunito:wght@300;400;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:    #F5F1EB;
+  --dark:  #1C1814;
+  --muted: #7A6E62;
+  --stone: #8B6F47;
+  --surf1: #EDE8DF;
+  --surf2: #E5DDD3;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  overflow-x: hidden;
+  cursor: none;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 44px; /* demo banner height */
+}
+
+section { scroll-margin-top: 180px; }
+ul { list-style: none; }
+a { text-decoration: none; }
+button, input, textarea, select { font-family: inherit; }
+
+img { -webkit-user-drag: none; user-drag: none; -webkit-touch-callout: none; user-select: none; }
+
+@media (max-width: 768px) { body { cursor: auto; } }
+@media print { body { display: none !important; } }
